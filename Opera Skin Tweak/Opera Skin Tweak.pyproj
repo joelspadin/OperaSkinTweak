@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0f5462aa-7a73-4051-8eac-3666f8917b31}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <AssemblyName>Opera Skin Tweak</AssemblyName>
+    <Name>Opera Skin Tweak</Name>
+    <RootNamespace>Opera Skin Tweak</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>2af0f10d-7135-4994-9156-5d01c9c11b7e</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="iniparse\compat.py" />
+    <Compile Include="iniparse\config.py" />
+    <Compile Include="iniparse\ini.py" />
+    <Compile Include="iniparse\utils.py" />
+    <Compile Include="iniparse\__init__.py" />
+    <Compile Include="main.py" />
+    <Compile Include="tweaks\add_large_feed_image.py" />
+    <Compile Include="tweaks\change_author.py" />
+    <Compile Include="tweaks\fix_mail_header_padding.py" />
+    <Compile Include="tweaks\hide_close_button_inactive.py" />
+    <Compile Include="tweaks\increase_infobar_icon_spacing.py" />
+    <Compile Include="tweaks\increase_menu_button_spacing.py" />
+    <Compile Include="tweaks\panel_header_gradient.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="iniparse" />
+    <Folder Include="tweaks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iniparse\LICENSE" />
+    <Content Include="iniparse\LICENSE-PSF" />
+  </ItemGroup>
+</Project>
